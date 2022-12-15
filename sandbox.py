@@ -1,3 +1,4 @@
+#to do
 '''add planets by clicking'''
 '''make revolution more realistic'''
 '''add planet info'''
@@ -22,9 +23,9 @@ theta=0
 # convert() converts the image to more optimized form for pygame 
 # convert() makes bg-less images have bg
 # convert_alpha() keeps it bg-less
-bg_surf = pygame.image.load('universe sandbox/graphics/starbg1.jpg').convert()
-star_surf = pygame.image.load('universe sandbox/graphics/sun.png').convert_alpha()
-planet_surf = pygame.image.load('universe sandbox/graphics/planet3.png').convert_alpha()
+bg_surf = pygame.image.load('graphics/starbg1.jpg').convert()
+star_surf = pygame.image.load('graphics/sun.png').convert_alpha()
+planet_surf = pygame.image.load('graphics/planet3.png').convert_alpha()
 
 planet_rect = planet_surf.get_rect(topleft = (x,y))
 
@@ -63,4 +64,3 @@ while True:
     if mouse_press == (1,0,0): 
             clock.tick(24)
     else: clock.tick(90)
-    
