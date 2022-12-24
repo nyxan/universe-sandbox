@@ -41,7 +41,7 @@ h,k = SCREENSIZE[0]/2, SCREENSIZE[1]/2
 # convert_alpha() keeps it bg-less
 bg_surf = pygame.image.load('graphics/starbgo.jpg').convert()
 bg_surf = pygame.transform.scale(bg_surf,SCREENSIZE)
-star_surf = pygame.image.load('graphics/sun.png').convert_alpha()
+star_surf = pygame.image.load('graphics/planet0.png').convert_alpha()
 star_rect = star_surf.get_rect(center = (h,k))
 
 pause_surf = pygame.image.load('graphics/pause.png').convert_alpha()
