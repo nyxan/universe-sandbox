@@ -1,7 +1,6 @@
-# controls:
-#  to show the information about the planet - click on that planet
-#  to zoom out - q
-#  to zoom in - e
+# to show the information about the planet - click on that planet
+# to zoom out - q
+# to zoom in - e
 
 import pygame
 import math 
@@ -154,9 +153,10 @@ def trail(n,planet_obj,color):
         trail_d[n].clear()
     
     # getting the position of planet
-    planet_pos = (planet_obj[1].x,planet_obj[1].y)
+    planet_pos = (planet_obj[1].center)
 
-    #checking if point is integer to not have to many points in the list
+    print(planet_obj[1].center)
+    #checking if point is integer to not have too many points in the list
     if str(planet_obj[1].x).isdigit():
         try:
             if planet_pos not in trail_d[n]:
