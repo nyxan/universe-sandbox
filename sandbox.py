@@ -155,7 +155,6 @@ def trail(n,planet_obj,color):
     # getting the position of planet
     planet_pos = (planet_obj[1].center)
 
-    print(planet_obj[1].center)
     #checking if point is integer to not have too many points in the list
     if str(planet_obj[1].x).isdigit():
         try:
